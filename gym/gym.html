@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harry Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background: url('gym.jpg') no-repeat center top fixed;
+            background-size: cover;
+            overflow-y: scroll;
+            /* Enable vertical scrolling */
+        }
+
+
+        header {
+            /* background-color: rgba(255, 0, 0, 0.8); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid rgb(0, 69, 242); */
+            padding: 1%;
+            margin-right: 20px;
+            width: 10%;
+            invert(100)
+        }
+
+        .logo img {
+            width: 80px;
+            margin-bottom: 5px;
+        }
+
+        .logo div {
+            font-size: 16px;
+        }
+
+        .navigationbar {
+            /* border: 2px solid green; */
+            flex-grow: 1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+
+        .navbar li {
+            font-size: 1.2em;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(44, 41, 41);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid yellow; */
+            width: 10%;
+        }
+
+        .buttons .btn {
+            margin: 5px 0;
+            font-size: 0.8em;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 10% auto;
+            padding: 5%;
+            width: 40%;
+            border-radius: 28px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 80%;
+            padding: 1% 5%;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 160%;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="logo">
+            <img src="manclimbing.jpg" alt="">
+            <div>Harry Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="navigationbar">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Equipments</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="buttons">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
